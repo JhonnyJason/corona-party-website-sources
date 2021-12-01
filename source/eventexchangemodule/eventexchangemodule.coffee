@@ -66,7 +66,7 @@ Channel = (channelId, node) ->
   }
 
 ############################################################
-eventexchangemodule.initialize = () ->
+eventexchangemodule.initialize = ->
     log "eventexchangemodule.initialize"
     return
 
