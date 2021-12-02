@@ -1,4 +1,4 @@
-peertopeermodule = {name: "peertopeermodule"}
+export name = "peertopeermodule"
 ############################################################
 #region printLogFunctions
 log = (arg) ->

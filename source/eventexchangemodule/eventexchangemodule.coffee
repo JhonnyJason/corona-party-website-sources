@@ -1,4 +1,4 @@
-eventexchangemodule = {name: "eventexchangemodule"}
+export name = "eventexchangemodule"
 ############################################################
 #region printLogFunctions
 log = (arg...) ->
@@ -66,14 +66,13 @@ Channel = (channelId, node) ->
   }
 
 ############################################################
-eventexchangemodule.initialize = ->
+export initialize = ->
     log "eventexchangemodule.initialize"
     return
 
-eventexchangemodule.channel = (channelId) ->
+export channel = (channelId) ->
   if not channels[channelId]
     channels[channelId] = await Channel(channelId, allModules.peertopeermodule.getNode())
 
   return channels[channelId]
 
-module.exports = eventexchangemodule
